@@ -1,0 +1,104 @@
+body{
+  margin: 0;
+}
+.main{
+  padding:20px;
+}
+.main div{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.cities{
+  margin-top: 100px;
+}
+.main div img{
+  width: calc(90% / 3);
+  margin-top: 60px;
+  border-radius: 5px;
+  height: 200px;
+  cursor: pointer;
+  transition: .5s;
+}
+.main div img:hover {
+  box-shadow: #000000c4 0px 4px 12px 0px;
+}
+@media (max-width:600px) {
+  .main div img{
+    width: 100%;
+  }
+}
+.modal-content{
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+.modal-images{
+  display: flex;
+  position: absolute;
+  bottom: 10%;
+  right: 50%;
+  transform: translate(50%, 0px);
+}
+.modal-images  .modal-img{
+  width: 100px;
+  height: 50px;
+  opacity: .5;
+}
+.selected{
+  opacity: 1 !important;
+}
+.main-img{
+  display: flex;
+      width: 80%;
+      position: absolute;
+      bottom: 50%;
+      right: 50%;
+      height: 50vh;
+      transform: translate(50%,40%);
+}
+@media (max-width:800px) {
+    .main-img{
+      width: 70%;
+    }
+    .modal-images .modal-img {
+      width: 60px;
+    }
+}
+h3{
+  color: white;
+    position: absolute;
+    bottom: 20%;
+    right: 50%;
+    transform: translate(50%,0);
+}
+.fa-times{
+  position: absolute;
+  top: 20px;
+  font-size: 30px;
+  right: 20px;
+  color: white;
+}
+.fa-chevron-left{
+  position: absolute;
+    top: 50%;
+    font-size: 30px;
+    left:5% ;
+    color: white;
+}
+.fa-chevron-right{
+  position: absolute;
+    top: 50%;
+    font-size: 30px;
+    right: 5%;
+    color: white;
+}
+.change{
+  display: none;
+}
